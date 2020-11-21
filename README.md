@@ -4,4 +4,4 @@ Run in this directory:
 ```
 docker-compose up
 ```
-The results will be at [http://localhost:5000](http://localhost:5000).
+After datebase initialize, the results will be at [http://0.0.0.0:5000](http://0.0.0.0:5000).
