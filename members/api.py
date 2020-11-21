@@ -1,11 +1,7 @@
-# Product Service
-
-# Import framework
 from flask import Flask, jsonify
 import mysql.connector
 from flask_restful import Resource, Api
 
-# Instantiate the app
 app = Flask(__name__)
 api = Api(app)
 
@@ -32,9 +28,8 @@ class Member(Resource):
     def get(self):
         return jsonify(Member_import())
 
-# Create routes
+
 api.add_resource(Member, '/')
 
-# Run the application
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
