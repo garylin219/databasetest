@@ -8,7 +8,7 @@ api = Api(app)
 def Member_import():
     config = {
         'user': 'cbb107018',
-        'password': 'zasd0456123',
+        'password': '',
         'host': 'web.csie.nptu.edu.tw',
         'port': '3306',
         'database': 'cbb107018_DB2020'
