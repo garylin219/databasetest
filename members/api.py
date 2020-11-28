@@ -7,16 +7,16 @@ api = Api(app)
 
 def Member_import():
     config = {
-        'user': 'root',
-        'password': 'root',
-        'host': 'db',
+        'user': 'cbb107018',
+        'password': 'zasd0456123',
+        'host': 'web.csie.nptu.edu.tw',
         'port': '3306',
-        'database': 'memberData'
+        'database': 'cbb107018_DB2020'
     }
     connection = mysql.connector.connect(**config)
     cursor = connection.cursor(dictionary=True)
 
-    cursor.execute('SELECT * FROM memberList')
+    cursor.execute('SELECT * FROM INFORMATION_SCHEMA.Tables')
     result = cursor.fetchall()
 
     cursor.close()
